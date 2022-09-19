@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("./images/fondo.jpg");
+  background-size: 100%;
+  margin: 0%;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header > div:first-child {
+  flex: 80%;
+  margin: 1%;
+}
+
+header > form {
+  flex: 10%;
+  margin: 1%;
+}
+
+header > form > select {
+  background-color: black;
+  color: white;
+  height: 30px;
+}
+
+header > button {
+  flex: 10%;
+  margin: 1% 1% 1% 1%;
+  color: white;
+  background-color: red;
+  border-radius: 5px;
+  border: 0px;
+  height: 30px;
+}
+
+#section-1 {
+  display: flex;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: Netflix Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+.v-big-letter {
+  margin: 10% 25% 0.5%;
+  font-size: 3.125rem;
+  font-family: Netflix Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+  text-align: center;
+  font-weight: bolder;
+}
+
+#section-1 > h3 {
+  margin: 0.5% 25%;
+}
+
+#section-1 > form {
+  width: 45%;
+  display: flex;
+}
+
+#section-1 > form > input:first-child {
+  flex: 90%;
+  height: 40px;
+  padding: 0 1%;
+  font-size: large;
+}
+
+#section-1 > form > input:nth-child(2) {
+  flex: 10%;
+  height: 40px;
+  color: white;
+  background-color: red;
+  font-size: large;
+  border: 0;
+  padding: 10px;
+  font-weight: bolder;
+}
+
+.section-next {
+  background-color: black;
+  border-top: 10px grey solid;
+  display: flex;
+  align-items: center;
+  color: white;
+  width: 100%;
+  margin: 0;
+}
+
+.section-next > div > h2 {
+  font-family: Netflix Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+  text-align: left;
+  width: 50%;
+  margin: 0 25%;
+}
+
+.section-next > div > .v-big-letter {
+  margin: 0 25% 0.5%;
+  text-align: left;
+}
+
+#faqs{
+    background-color: black;
+    border-top: 10px grey solid;
+    align-items: center;
+    color: white;
+    width: 100%;
+    margin: 0;
+}
+
+#faqs > .v-big-letter{
+    margin:5% 0 1% 0;
+    width:100%;
+    text-align:center;
+    align-items: center;
+}
+
+#faqs > ul{
+    width:100%; 
+}
+
+#faqs > ul > li{
+    width: 80%;
+    background-color:grey;
+    font-size: xx-large;
+    list-style-type: none;
+}
+
+
+footer{
+    background-color: black;
+    border-top: 10px grey solid;
+    display: flex;
+    align-items: center;
+    color: white;
+    width: 100%;
+    margin: 0;
+}
