@@ -1,3 +1,3 @@
 # Lab 1: Netflix
 
-https://ddelgadod.github.io/lab-1-netflix/netflix
+https://ddelgadod.github.io/IRONHACK-lab-1-netflix/
