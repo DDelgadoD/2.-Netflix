@@ -1,16 +1,33 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css";
+@font-face {
+  font-family: Netflix Sans;
+  src: url("./fonts/NetflixSans-Light.otf") format("opentype");
+}
+
 * {
   box-sizing: border-box;
+  font-family: Netflix Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
-body {
+.is-white{
+  color:white;
+}
+
+body{
+  margin:0%;
+  padding: 0%;
+}
+
+.backg{
   background-image: url("./images/fondo.jpg");
-  background-size: 100%;
-  margin: 0%;
+  background-size:auto;
+  background-position: center;
+  margin:0%;
+  padding: 0;
 }
 
-body::before {
-  content: "";
-  position: absolute;
+.backg-black{
+  margin:0;
   top: 0px;
   right: 0px;
   bottom: 0px;
@@ -23,32 +40,64 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 0px 50px;
+  padding-top: 15px; 
+}
+
+header img{
+  width: 175px;
 }
 
 header > div:first-child {
-  flex: 80%;
-  margin: 1%;
+  flex: 70%;
+  
 }
 
-header > form {
-  flex: 10%;
-  margin: 1%;
+.select-box{
+  position:relative;
 }
 
-header > form > select {
+.select-box select{
   background-color: black;
   color: white;
-  height: 30px;
+  padding: 8px 25px;
+  appearance: none;
+  background-image:
+    linear-gradient(45deg, transparent 50%, white 50%),
+    linear-gradient(135deg, white 50%, transparent 50%),
+    linear-gradient(to right, black, black);
+  background-position:
+    calc(100% - 10px) 1em,
+    calc(100% - 5px) 1em,
+    100% 0;
+  background-size:
+    5px 5px,
+    5px 5px,
+    2.5em 2.5em;
+  background-repeat: no-repeat;
+
 }
 
-header > button {
-  flex: 10%;
-  margin: 1% 1% 1% 1%;
+.select-box select option{
+ background-color: grey;
+}
+
+.select-box i{
+  position: absolute;
+  top: 10px;
+  left: 8px;
+  font-size: smaller;
+}
+
+
+header  button {
+  margin-left: 30px;
+  font-size:medium;
   color: white;
   background-color: red;
   border-radius: 5px;
   border: 0px;
-  height: 30px;
+  padding: 7px 15px;
 }
 
 #section-1 {
@@ -59,12 +108,12 @@ header > button {
   flex-wrap: wrap;
   font-family: Netflix Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
   text-align: center;
-  margin-bottom: 10%;
+  padding-bottom: 10%;
 }
 
 .v-big-letter {
-  margin: 10% 25% 0.5%;
-  font-size: 3.125rem;
+  margin: 10% 30% 0.5%;
+  font-size: 4em;
   font-family: Netflix Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
   text-align: center;
   font-weight: bolder;
@@ -74,85 +123,158 @@ header > button {
   margin: 0.5% 25%;
 }
 
-#section-1 > form {
-  width: 45%;
+.peroya {
+  width: 37%;
   display: flex;
 }
 
-#section-1 > form > input:first-child {
-  flex: 90%;
-  height: 40px;
+.peroya > input:first-child {
+  width:70%;
+  height:70px;
   padding: 0 1%;
-  font-size: large;
+  font-size: medium;
+  color: grey;
 }
 
-#section-1 > form > input:nth-child(2) {
-  flex: 10%;
-  height: 40px;
+.peroya > input:nth-child(2) {
+  width: 30%;
+  height:70px;
   color: white;
   background-color: red;
-  font-size: large;
+  font-size: 1.8em;
+  font-weight:lighter;
   border: 0;
-  padding: 10px;
+  padding: 0 10px;
   font-weight: bolder;
 }
 
 .section-next {
   background-color: black;
-  border-top: 10px grey solid;
+  border-top: 5px grey solid;
   display: flex;
-  align-items: center;
+  justify-content:center;
   color: white;
   width: 100%;
   margin: 0;
+  padding: 100px 360px;
+}
+
+.section-next img{
+  margin: 0 80px;
 }
 
 .section-next > div > h2 {
   font-family: Netflix Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
   text-align: left;
-  width: 50%;
-  margin: 0 25%;
+  font-size: 1.7em;
 }
 
-.section-next > div > .v-big-letter {
-  margin: 0 25% 0.5%;
+.big-letter {
+  font-size: 3em;
+  font-family: Netflix Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
   text-align: left;
+  font-weight: bolder;
+
+}
+
+.section-next > img{
+  width: 500px;
 }
 
 #faqs{
     background-color: black;
-    border-top: 10px grey solid;
+    border-top: 5px grey solid;
     align-items: center;
     color: white;
-    width: 100%;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 100px;
 }
 
-#faqs > .v-big-letter{
-    margin:5% 0 1% 0;
-    width:100%;
+.no-so-big-letter{
+    margin:2% 0 2% 0;
     text-align:center;
-    align-items: center;
+    font-size: 3em;
 }
 
-#faqs > ul{
-    width:100%; 
+.faq{
+    display: flex;
+    font-size: 1.5em;
+    justify-content: space-between;
+    width: 45%;
+    background-color:#303030;
+    padding: 0 25px;
+    margin: 5px;
 }
 
-#faqs > ul > li{
-    width: 80%;
-    background-color:grey;
-    font-size: xx-large;
-    list-style-type: none;
+.plus{
+  font-size: 2em;
+  line-height: 20px;
+  margin: auto 0;
 }
 
+#faqs h3{
+  margin-top: 60px;
+  width: 40%;
+  text-align:center;
+}
 
 footer{
     background-color: black;
-    border-top: 10px grey solid;
+    border-top: 5px grey solid;
     display: flex;
-    align-items: center;
-    color: white;
+    flex-direction: column;
+    color: #736E68;
     width: 100%;
     margin: 0;
+    align-items: center;
+}
+
+.cont{
+  width:50%;
+  margin-top: 80px;
+}
+
+.links{
+  display:flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.links p{
+  width:25%;
+  font-size: small;
+}
+
+footer .select-box{
+  margin: 30px 0;
+}
+
+footer .select-box select{
+  color: #736E68;
+  font-size:large;
+  background-image:
+    linear-gradient(45deg, transparent 50%, #736E68 50%),
+    linear-gradient(135deg, #736E68 50%, transparent 50%),
+    linear-gradient(to right, black, black);
+  background-position:
+    calc(100% - 10px) 1.25em,
+    calc(100% - 5px) 1.25em,
+    100% 0;
+  background-size:
+    5px 5px,
+    5px 5px,
+    2.5em 2.5em;
+  background-repeat: no-repeat;
+  padding:15px 30px;
+}
+
+footer .select-box i{
+  color: #736E68;
+  padding: 8px 0px;
+}
+
+.petita{
+  font-size: .7em;
 }

@@ -4,41 +4,48 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./images/nficon2016.png"/>
     <link rel="stylesheet" href="./style.css" />
     <title>Netflix</title>
   </head>
   <body>
-    <header>
-      <div>
-        <img src="images/netflix.png" width="200px" alt="Netflix" />
-      </div>
-      <form>
-        <select>
-          <option>Español</option>
-          <option>English</option>
-        </select>
-      </form>
-      <button>Iniciar Sesión</button>
-    </header>
+    <section class="backg">
+    <div class="backg-black">
+        <header>
+          <div>
+            <img src="images/netflix.png" width="200px" alt="Netflix" />
+          </div>
+          
+          <div class="select-box">
+            <select>
+              <option>Español</option>
+              <option>English</option>
+            </select>
+            <i class="fa-solid fa-globe is-white pad-"></i>
+          </div>
+          <button>Iniciar Sesión</button>
+        </header>
 
-    <section id="section-1">
-      <p class="v-big-letter">
-        Todas las películas y series que desees, y mucho más.
-      </p>
-      <h2>Disfruta donde quieras. Cancela cuando quieras.</h2>
-      <h3>
-        ¿Quieres ver algo ya? Escribe tu dirección de correo para crear una
-        suscripción a Netflix o reactivarla.
-      </h3>
-      <form>
-        <input type="email" placeholder="Dirección de correo" />
-        <input type="submit" value="Empezar >" />
-      </form>
+        <div id="section-1">
+          <p class="v-big-letter">
+            Todas las películas y series que desees, y mucho más.
+          </p>
+          <h2>Disfruta donde quieras. Cancela cuando quieras.</h2>
+          <h3>
+            ¿Quieres ver algo ya? Escribe tu dirección de correo para crear una
+            suscripción a Netflix o reactivarla.
+          </h3>
+          <form class="peroya">
+            <input type="email" placeholder="Dirección de correo" />
+            <input type="submit" value="Empezar >" />
+          </form>
+        </div>
+      </div>
     </section>
 
     <section class="section-next">
       <div>
-        <p class="v-big-letter">Disfruta de Netflix en tu TV.</p>
+        <p class="big-letter">Disfruta de Netflix en tu TV.</p>
         <h2>
           Smart TV, Playstation, Xbox, Chromecast, Apple TV, reproductores
           Blu-ray y muchos más.
@@ -50,7 +57,7 @@
     <section class="section-next">
       <img src="images/mobile.jpg" alt="mobile" />
       <div>
-        <p class="v-big-letter">
+        <p class="big-letter">
           Descárgate tus series favoritas para verlas sin conexión.
         </p>
         <h2>
@@ -62,7 +69,7 @@
 
     <section class="section-next">
       <div>
-        <p class="v-big-letter">Disfruta en todas partes.</p>
+        <p class="big-letter">Disfruta en todas partes.</p>
         <h2>
           Reproduce en streaming todas las películas y series en tu móvil,
           tableta, ordenador y TV sin pagar más.
@@ -74,7 +81,7 @@
     <section class="section-next">
       <img src="images/nenes.png" alt="nenes" />
       <div>
-        <p class="v-big-letter">Crea perfiles infantiles.</p>
+        <p class="big-letter">Crea perfiles infantiles.</p>
         <h2>
           Deja que los niños vivan aventuras con sus personajes favoritos en un
           espacio diseñado exclusivamente para ellos, gratis con tu suscripción.
@@ -83,20 +90,87 @@
     </section>
 
     <section id="faqs">
-        <p class="v-big-letter">Preguntas frecuentes</p>
-        <ul>
-            <li>¿Qué es Netflix?</li>
-            <li>¿Qué es Netflix?</li>
-            <li>¿Qué es Netflix?</li>
-            <li>¿Qué es Netflix?</li>
-            <li>¿Qué es Netflix?</li>
-            <li>¿Qué es Netflix?</li>
-            
-        </ul>
+      <p class="no-so-big-letter">Preguntas frecuentes</p>
+      
+      <div class="faq">  
+        <p>¿Que es Netflix?</p>
+        <p class="plus" >+</p>   
+      </div>
+      <div class="faq">  
+        <p>¿Cuánto cuesta Netflix?</p>
+        <p class="plus" >+</p>   
+      </div>
+      <div class="faq">  
+        <p>¿Dónde puedo ver Netflix?</p>
+        <p class="plus" >+</p>   
+      </div>
+      <div class="faq">  
+        <p>¿Cómo cancelo?</p>
+        <p class="plus" >+</p>   
+      </div>
+      <div class="faq">  
+        <p>¿Qué puedo ver en Netflix?</p>
+        <p class="plus" >+</p>   
+      </div>
+      <div class="faq">  
+        <p>¿Es Netflix bueno para los niños?</p>
+        <p class="plus" >+</p>   
+      </div>
+
+      <h3>
+        ¿Quieres ver algo ya? Escribe tu dirección de correo para crear una
+        suscripción a Netflix o reactivarla.
+      </h3>
+      <form class="peroya">
+        <input type="email" placeholder="Dirección de correo" />
+        <input type="submit" value="Empezar >" />
+      </form>
     </section>
 
     <footer>
-
+      <div class="cont" >
+        <div>¿Preguntas? Llama al 900 822 376</div>
+        <div>
+          <div class="links">
+            <p>Preguntas frecuentes</p>
+            <p>Centro de ayuda</p>
+            <p>Cuenta</p>
+            <p>Zona de prensa</p>
+          </div>
+          <div class="links">
+            <p>Inversores</p>
+            <p>Empleo</p>
+            <p>Canjear tarjetas regalo</p>
+            <p>Comprar tarjetas regalo</p>
+          </div>
+          <div class="links"> 
+            <p>Formas de ver</p>
+            <p>Términos de uso</p>
+            <p>Privacidad</p>
+            <p>Preferencias de cookies</p>
+          </div>
+          <div class="links"> 
+            <p>Información corporativa</p>
+            <p>Contáctanos</p>
+            <p>Prueba de velocidad</p>
+            <p>Garantía legal</p>
+          </div>
+          <div class="links">
+            <p>Avisos legales</p>
+            <p>Solo en Netflix</p>
+            <p></p>
+            <p></p>
+          </div>
+        </div>
+        <div class="select-box">
+          <select>
+            <option>Español</option>
+            <option>English</option>
+          </select>
+          <i class="fa-solid fa-globe is-white pad-"></i>
+        </div>
+        <p class="petita">Netflix España</p>
+      </div>        
     </footer>
 
   </body>
